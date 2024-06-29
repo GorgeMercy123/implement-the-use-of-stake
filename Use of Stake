@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        // Create a stack of integers
+        Stack<int> myStack = new Stack<int>();
+
+        // Push elements onto the stack
+        myStack.Push(10);
+        myStack.Push(20);
+        myStack.Push(30);
+
+        // Check if the stack is empty
+        if (myStack.Count == 0)
+        {
+            Console.WriteLine("Stack is empty");
+        }
+        else
+        {
+            // Peek at the top element of the stack
+            Console.WriteLine("Top element: " + myStack.Peek());
+
+            // Pop element from the stack
+            myStack.Pop();
+
+            // Peek at the new top element of the stack
+            Console.WriteLine("New top element: " + myStack.Peek());
+        }
+    }
+}
